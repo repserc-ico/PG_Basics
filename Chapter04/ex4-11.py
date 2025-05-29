@@ -1,5 +1,5 @@
 def even_odd():
-    input("数字を入力してください")
+    n=int(input("数字を入力してください"))
     if n%2==0:
         print("偶数です")
     else:
