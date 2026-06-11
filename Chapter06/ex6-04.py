@@ -1,0 +1,5 @@
+#文字列から文字を１つずつ取り出す
+author = "Kafka"
+print(author[-1])
+print(author[-2])
+print(author[-3])
