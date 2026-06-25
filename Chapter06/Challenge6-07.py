@@ -2,4 +2,5 @@
 author = "Hemingway"
 
 #文字を探すメソッドを使うと、その文字の場所のインデックス番号がわかります
-print()
+#テキストp96参照
+print(author.index("m") )
