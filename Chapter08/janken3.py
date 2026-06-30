@@ -10,31 +10,27 @@ you = int(input("じゃんけんぽん！(グー:1,チョキ:2,パー:3)->") )
 computer = random.randint(1,3)
 print(f"あなたの手：{ rsp[you] }　コンピュータ：{ rsp[computer] }" )   
 #入力した手コンピュータの手を比較して、勝ち/負け/あいこを判定する
+if you == computer: #あいこから判定する
+    print("あいこです")
+else:  #勝ちか負けか
 #勝負の結果を表示する
-if you == 1:    #グー
-    if computer == 1:
-        print("あいこです")
-    elif computer == 2:
-        print("あなたの勝ちです")
+    if you == 1:    #グー
+        if computer == 2:
+            print("あなたの勝ちです")
+        else:
+            print("あなたの負けです")
+    elif you == 2:    #チョキ
+        if computer == 3:
+            print("あなたの勝ちです")
+        else:
+            print("あなたの負けです")
+    elif you == 3:    #パー
+        if computer == 1:
+            print("あなたの勝ちです")
+        else:
+            print("あなたの負けです")
     else:
-        print("あなたの負けです")
-elif you == 2:  #チョキ
-    if computer == 1:
-        print("あなたの負けです")
-    elif computer == 2:
-        print("あいこです")
-    else:
-        print("あなたの勝ちです")
-elif you == 3:  #パー
-    if computer == 1:
-        print("あなたの勝ちです")
-    elif computer == 2:
-        print("あなたの負けです")
-    else:
-        print("あいこです")
-else:   #入力間違い
-    print("1か2か3を入力してください")
-
+        print("1か2か3を入力してください")
 """
 勝負の結果を表示する
 　　例）
