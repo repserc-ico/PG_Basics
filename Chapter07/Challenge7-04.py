@@ -2,17 +2,16 @@
 answers = [23, 6, 19, 37, 43]  #正解の数
 
 #無限ループさせる
-while     :
+while True:
     #何か数字を入力してもらう
-    n = input("")
+    n = input("何か数字を入れてください->")
     #"q"が入力されていたら終了
-    if      :
+    if n == 'q' :
         #無限ループから強制的に抜ける
-
+        break
     else:
-        if int(n)      :
+        if int(n) in answers:
             print("正解")
         else:
             print("数字を入力するか、qで終了します")
-
 

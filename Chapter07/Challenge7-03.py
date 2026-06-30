@@ -5,5 +5,5 @@ drama = ["ウォーキング・デッド",
          "ヴァンパイア・ダイアリーズ"
 ]
 #enumerate関数を使えばインデックス番号と要素の両方が取得できる(第7章スライド21参照)
-for    in     :
-    print(f"{    }: {   }")
+for i,tv in enumerate(drama):
+    print(f"{i}: {tv}")

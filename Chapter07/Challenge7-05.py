@@ -4,9 +4,9 @@ num2 = [9, 1, 33, 83]
 multi = []  #かけあわせた結果を格納するリスト
 
 #ループ処理を入れ子にすると、num1とnum2それぞれの値を掛け合わせられる
-for i in     :  #外側のループ(num1)
-    for j in     :  #内側のループ(num2)
-        multi.append(      )  #かけ合わせた結果をmultiに追加
+for n1 in num1:  #外側のループ(num1)
+    for n2 in num2:  #内側のループ(num2)
+        multi.append( n1 * n2 )  #かけ合わせた結果をmultiに追加
     #内側のループ終わり
 #外側のループ終わり
 

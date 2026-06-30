@@ -5,5 +5,6 @@ drama = ["ウォーキング・デッド",
          "ヴァンパイア・ダイアリーズ"
 ]
 #for文でループ処理を使えばprint文は1回で済む
-for 
-    print()
+for tv in drama:
+    print(tv)
+
